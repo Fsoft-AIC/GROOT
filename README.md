@@ -15,12 +15,12 @@
     - [Optimization](#optimization)
 
 ## Introduction
-This is the official implementation of the manuscript "GROOT: Effective Design of Biological Sequences with Limited Experimental Data".
+This is the official implementation of the paper "GROOT: Effective Design of Biological Sequences with Limited Experimental Data".
 
 ![GROOT](./static/framework.png)
 
 ## Dependencies
-The [`environment.yaml`](environment.yml) file conains the necessary dependencies to run GROOT. It requires Python 3.10, CUDA version 11.8 to run the main pipeline.
+The [`environment.yaml`](environment.yml) file contains the necessary dependencies to run GROOT. It requires Python 3.10 and CUDA version 11.8 to run the main pipeline.
 
 ## Installation
 
@@ -91,7 +91,7 @@ python scripts/optimize.py [CONFIG_FILE] --devices [DEVICES] --dataset [DATASET]
 For more details about these arguments, refer to the [`optimize.sh`](./scripts/optimize.sh) file.
 
 ### Citation
-If our paper or codebase help you with your research, please consider citing us:
+If our paper or codebase aids your research, please consider citing us:
 ```bibtex
 @misc{tran2024grooteffectivedesignbiological,
       title={GROOT: Effective Design of Biological Sequences with Limited Experimental Data}, 
