@@ -1,0 +1,23 @@
+algo_name: LBFGS
+num_iteration: 6
+sample_strategy: random
+pool_frac: 1.0
+topK: 500
+pred_hidden_dim: 128
+return_latent: False
+smooth: True
+
+smooth_config:
+    algo: lp  # lp
+    num_node: 4000
+    lr: 0.001
+    num_epoch: 500
+    num_neighbor: 5
+    gamma: 0.8
+    range: [0.4, 0.9]
+    dist_metric: euclidean  # cosine
+    smooth_all: False
+
+    # label propagation
+    num_layers: 3
+    alpha: 0.3
