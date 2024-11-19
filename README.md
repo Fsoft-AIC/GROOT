@@ -13,6 +13,7 @@
 - [Usage](#usage)
     - [Training](#training)
     - [Optimization](#optimization)
+- [Citation](#citation)
 
 ## Introduction
 This is the official implementation of the paper "GROOT: Effective Design of Biological Sequences with Limited Experimental Data".
@@ -90,7 +91,7 @@ python scripts/optimize.py [CONFIG_FILE] --devices [DEVICES] --dataset [DATASET]
 
 For more details about these arguments, refer to the [`optimize.sh`](./scripts/optimize.sh) file.
 
-### Citation
+## Citation
 If our paper or codebase aids your research, please consider citing us:
 ```bibtex
 @misc{tran2024grooteffectivedesignbiological,
