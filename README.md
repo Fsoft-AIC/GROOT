@@ -94,13 +94,21 @@ For more details about these arguments, refer to the [`optimize.sh`](./scripts/o
 ## Citation
 If our paper or codebase aids your research, please consider citing us:
 ```bibtex
-@misc{tran2024grooteffectivedesignbiological,
-      title={GROOT: Effective Design of Biological Sequences with Limited Experimental Data}, 
-      author={Thanh V. T. Tran and Nhat Khang Ngo and Viet Anh Nguyen and Truong Son Hy},
-      year={2024},
-      eprint={2411.11265},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2411.11265}, 
+@inproceedings{10.1145/3690624.3709291,
+author = {Tran, Thanh V. T. and Ngo, Nhat Khang and Nguyen, Viet Anh and Hy, Truong Son},
+title = {GROOT: Effective Design of Biological Sequences with Limited Experimental Data},
+year = {2025},
+isbn = {9798400712456},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3690624.3709291},
+doi = {10.1145/3690624.3709291},
+abstract = {Latent space optimization (LSO) is a powerful method for designing discrete, high-dimensional biological sequences that maximize expensive black-box functions, such as wet lab experiments. This is accomplished by learning a latent space from available data and using a surrogate model fΦ to guide optimization algorithms toward optimal outputs. However, existing methods struggle when labeled data is limited, as training fΦ with few labeled data points can lead to subpar outputs, offering no advantage over the training data itself. We address this challenge by introducing GROOT, a GRaph-based Latent SmOOThing for Biological Sequence Optimization. In particular, GROOT generates pseudo-labels for neighbors sampled around the training latent embeddings. These pseudo-labels are then refined and smoothed by Label Propagation. Additionally, we theoretically and empirically justify our approach, demonstrate GROOT's ability to extrapolate to regions beyond the training set while maintaining reliability within an upper bound of their expected distances from the training regions. We evaluate GROOT on various biological sequence design tasks, including protein optimization (GFP and AAV) and three tasks with exact oracles from Design-Bench. The results demonstrate that GROOT equalizes and surpasses existing methods without requiring access to black-box oracles or vast amounts of labeled data, highlighting its practicality and effectiveness. We release our code at https://github.com/Fsoft-AIC/GROOT.},
+booktitle = {Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1},
+pages = {1385–1396},
+numpages = {12},
+keywords = {label propagation, landscape smoothing, latent space optimization, protein optimization},
+location = {Toronto ON, Canada},
+series = {KDD '25}
 }
 ```
